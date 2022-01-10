@@ -53,3 +53,17 @@ nome_1 == nome_4 #false por conta do espaço em banco
 #tomar cuidado, todo o caracter é avaliado, incluindo os espaços em branco
 
 #---
+#armazenamento de fatores
+
+CargaHoraria <- c(220,220,150,100,100)
+summary(CargaHoraria)
+
+CargaHoraria <- as.factor(CargaHoraria) #tipo fator, categorias
+#tres categorias distintas (220,150,100)
+summary(CargaHoraria) #resume quantas vezes é mensionado a categoria
+mode(CargaHoraria) #modo de armazenado
+class(CargaHoraria) #o tipo
+
+CargaHoraria[1]+CargaHoraria[2] #erro, tipo factor
+
+#---
