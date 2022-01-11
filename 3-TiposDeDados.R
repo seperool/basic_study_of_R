@@ -84,3 +84,18 @@ logico2 <- c(1,TRUE,3) #Nesse caso TRUE é lido como numerico, ou seja 1
 #FALSE é igual a 0
 
 #---
+
+#vetores - estrutura basica de dados
+#uma sequencia de dados do mesmo tipo
+
+#vetor de caracteres
+is.vector(nomes) #é um vetor? sim
+mode(nomes) #tipo de dado no vetor, caracter
+
+is.vector(horas) #é um vetor com um elemento
+mode(horas) #o tipo do elemento é numerico
+
+is.vector(L1) #é um vetor
+mode(L1) #o tipo do dado é logico, pois é TRUE
+
+#---
