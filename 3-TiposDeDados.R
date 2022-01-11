@@ -67,3 +67,20 @@ class(CargaHoraria) #o tipo
 CargaHoraria[1]+CargaHoraria[2] #erro, tipo factor
 
 #---
+#armazenamento logico
+
+#salvar uma variavel logica, criada atraves de uma comparação logica
+L1 <- salario > horas
+L1
+
+L2 <- salario < horas
+L2
+
+logico <- TRUE #salvar uma variavel logica TRUE
+logico1 <- "TRUE" #entre aspas é uma string
+logico2 <- c(1,TRUE,3) #Nesse caso TRUE é lido como numerico, ou seja 1
+
+#TRUE é igual a 1
+#FALSE é igual a 0
+
+#---
