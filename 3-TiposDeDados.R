@@ -132,3 +132,18 @@ e[[1]][1] #[[]] é a posição na lista, [] é a posição no vetor na primeira 
 e[[2]] #acessa a posição 2 na lista
 
 #---
+#Matrizes - Duas dimensões, um tipo de dado
+
+m <- matrix(1:9, nrow=3) #9 elementos, 3 linhas
+m
+mode(m)
+class(m)
+
+#acessando elemento
+#matriz[linha,coluna]
+m[1,3]
+m[1,3] <- "a" #muda todos os dados para caracter
+#pois a matriz só aceita um tipo de elemento, se adicionar caracter, tudo vira caracter
+mode(m)
+m
+class(m)
