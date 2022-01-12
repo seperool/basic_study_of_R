@@ -1,7 +1,7 @@
 #DataFrames
 
 #definindo area de trabalho
-setwd("~/R-basic-github") #navegando pelos diretorios
+setwd("~/Documentos") #navegando pelos diretorios
 
 #importando base de dados
 df <- read.csv("DataFrame.csv") #importando uma base de dados para a variavel df
@@ -18,19 +18,19 @@ summary(df) #resume os objeto df
 #seleção de variaveis
 df #chama todo o dataframe
 df [1] #seleciona e mostra o numero da coluna, no caso 1º coluna
-df$Dia_sem #seleciona e mostra a coluna pelo nome
+df$DIA_SEM #seleciona e mostra a coluna pelo nome
 
 col1 <- df[1]
-col2 <- df$Dia_sem
+col2 <- df$DIA_SEM
 
 class(col1) #ainda é um dataframe de 1 coluna
 class(col2) #é um vetor do tipo dos elementos contidos
-class(df$Dia_sem) #igual ao col2
+class(df$DIA_SEM) #igual ao col2
 
 #modificando o dataframe
 
 #excluindo variaveis
-df$onibus <- NULL #exclui a coluna onibus
+df$ONIBUS <- NULL #exclui a coluna onibus
 
 #alterando o tipo de variavel
 df$UPS
