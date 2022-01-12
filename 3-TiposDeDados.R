@@ -99,3 +99,36 @@ is.vector(L1) #é um vetor
 mode(L1) #o tipo do dado é logico, pois é TRUE
 
 #---
+#Lista - vetor com tipos de dados diferentes
+
+a <- c(1,2,3,4,5)
+b <- c(1,"2",3,4,5) #converteu todos os elementos em tipo caracter, não é lista
+a
+b
+
+#conversão e tipo
+b <- as.numeric(b) #converte os elementos em tipo numerico
+b
+
+#e se b, fosse convertido, mas tivesse uma letra
+b <- as.numeric(c(1,"2","a",4,5)) #a função não consegue converter "a", então fica NA
+b
+
+is.list(a)
+is.list(b)
+
+is.vector(a)
+is.vector(b)
+
+b <- list(10,"5",8) #função para criação de lista
+is.list(b)
+mode(b)
+str(b) #resumo dos elementos
+
+e <- list(c(10,6,51,5),"2",8) #a primeira posição da lista é um vetor
+str(e)
+View(e)
+e[[1]][1] #[[]] é a posição na lista, [] é a posição no vetor na primeira posição da lista
+e[[2]] #acessa a posição 2 na lista
+
+#---
