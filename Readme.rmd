@@ -3,14 +3,14 @@ title: "Readme.rmd"
 author: "Sergio Pedro R Oliveira"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    df_print: paged
+  pdf_document: default
   github_document: default
-  md_document:
-    variant: markdown_github
   odt_document: default
   word_document: default
-  pdf_document: default
+  html_document:
+    df_print: paged
+  md_document:
+    variant: markdown_github
 ---
 
 # Objetivo
@@ -23,11 +23,24 @@ Videoaulas de 'curso R para iniciantes'.\
 
 \newpage
 
-# Aula 01 -
+# Aula 01 - Introdução
+
+- **R** é uma linguagem estatística e gráfica.\
+- É uma linguagem com um foco bem definido.\
+- Muito usada para **Big Data** e **Machine Learning**.\
+- Linguagem de codigo aberto.\
+- Muitos pacotes a disposição.\
+- Ambiente de desenvolvimento: **RStudio**.\
 
 \newpage
 
-# Aula 02 - 
+# Aula 02 - Instalação R e RStudio
+
+- **R**\
+https://cran.r-project.org/ \
+
+- **RStudio**(IDE)\
+https://www.rstudio.com/ \
 
 \newpage
 

@@ -6,9 +6,22 @@ Estudo dirigido de básico de linguagem R.
 
 Videoaulas de ‘curso R para iniciantes’.  
 
-# Aula 01 -
+# Aula 01 - Introdução
 
-# Aula 02 -
+-   **R** é uma linguagem estatística e gráfica.  
+-   É uma linguagem com um foco bem definido.  
+-   Muito usada para **Big Data** e **Machine Learning**.  
+-   Linguagem de codigo aberto.  
+-   Muitos pacotes a disposição.  
+-   Ambiente de desenvolvimento: **RStudio**.  
+
+# Aula 02 - Instalação R e RStudio
+
+-   **R**  
+    <https://cran.r-project.org/>  
+
+-   **RStudio**(IDE)  
+    <https://www.rstudio.com/>  
 
 # Aula 03 -
 
