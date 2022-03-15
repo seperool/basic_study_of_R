@@ -23,9 +23,39 @@ Videoaulas de ‘curso R para iniciantes’.
 -   **RStudio**(IDE)  
     <https://www.rstudio.com/>  
 
-# Aula 03 -
+# Aula 03 - Conhecendo o R e o RStudio parte 1
 
-# Aula 04 -
+-   Alterando o *layout* do **RStudio**:  
+
+    -   opção **Tools**  
+        -   **Global Options**  
+            -   **Pane Layout**  
+                Reorganizar o *layout* das janelas do RStudio para
+                melhor se adaptar ao usuário.  
+
+-   Inserir **comentarios**, utilizar ‘**\#**’.  
+
+-   Para executar um script:  
+
+    -   Deixar o cursor sobre a linha que deve ser executada.  
+    -   Selecionar o codigo que deve ser executado.  
+        Obs.: Atalho para executar ‘CRTL + Enter’.  
+
+-   Atribuições:  
+    (Tipagem automatica/dinâmica)  
+
+    -   Atribuições de **variaveis** usar o sinal ‘**->**’ ou
+        ‘**\<-**’.  
+    -   Atribuição de **funções** utilizar o sinal ‘**=**’.  
+
+-   Tipagem:  
+
+    -   Tipagem das variaveis automatica/dinâmica.  
+    -   Erro ao fazer operações com variaveis de tipos distintos.  
+
+# Aula 04 - Conhecendo R e o RStudio parte 2
+
+-   Help ‘**?**’, usado para pesquisar uma função.  
 
 # Aula 05 -
 
