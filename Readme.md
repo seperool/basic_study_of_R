@@ -1,12 +1,12 @@
-# Objetivo
+# 1 Objetivo
 
 Estudo dirigido de básico de linguagem R.  
 
-# Referência
+# 2 Referência
 
 Videoaulas de ‘curso R para iniciantes’.  
 
-# Aula 01 - Introdução
+# 3 Aula 01 - Introdução
 
 -   **R** é uma linguagem estatística e gráfica.  
 -   É uma linguagem com um foco bem definido.  
@@ -15,7 +15,7 @@ Videoaulas de ‘curso R para iniciantes’.
 -   Muitos pacotes a disposição.  
 -   Ambiente de desenvolvimento: **RStudio**.  
 
-# Aula 02 - Instalação R e RStudio
+# 4 Aula 02 - Instalação R e RStudio
 
 -   **R**  
     <https://cran.r-project.org/>  
@@ -23,9 +23,9 @@ Videoaulas de ‘curso R para iniciantes’.
 -   **RStudio**(IDE)  
     <https://www.rstudio.com/>  
 
-# Aula 03 - Conhecendo o R e o RStudio parte 1
+# 5 Aula 03 - Conhecendo o R e o RStudio parte 1
 
-## Configuração do **layout** do **RStudio**
+## 5.1 Configuração do **layout** do **RStudio**
 
 -   Alterando o *layout* do **RStudio**:  
     -   opção **Tools**  
@@ -34,58 +34,64 @@ Videoaulas de ‘curso R para iniciantes’.
                 Reorganizar o *layout* das janelas do RStudio para
                 melhor se adaptar ao usuário.  
 
-## Inserir **comentarios**
+## 5.2 Inserir **comentarios**
 
 -   Inserir **comentarios**, utilizar ‘**\#**’.  
 
-## Compilar codigo
+## 5.3 Compilar codigo
 
 -   Para executar um script:  
     -   Deixar o cursor sobre a linha que deve ser executada.  
     -   Selecionar o codigo que deve ser executado.  
         Obs.: Atalho para executar ‘CRTL + Enter’.  
 
-## Atribuições
+## 5.4 Atribuições
 
 (Tipagem automatica/dinâmica)  
 
--   Atribuições de **variaveis** usar o sinal ‘**-\>**’ ou ‘**\<-**’.  
+-   Atribuições de **variaveis** usar o sinal ‘**->**’ ou ‘**\<-**’.  
 
 -   Atribuição de **funções** utilizar o sinal ‘**=**’.  
 
-## Tipagem de variaveis
+## 5.5 Tipagem de variaveis
 
 -   Tipagem das variaveis automatica/dinâmica.  
 -   Erro ao fazer operações com variaveis de tipos distintos.  
 
-# Aula 04 - Conhecendo R e o RStudio parte 2
+# 6 Aula 04 - Conhecendo R e o RStudio parte 2
 
-## Pesquisa de função
+## 6.1 Pesquisa de função
 
 -   Help ‘**?**’, usado para pesquisar uma função.  
 
-# Aula 05 -
+# 7 Aula 05 -
 
-# Aula 06 -
+# 8 Aula 06 -
 
-# Aula 07 -
+# 9 Aula 07 -
 
-# Aula 08 -
+# 10 Aula 08 -
 
-# Aula 09 -
+# 11 Aula 09 -
 
-# Aula 10 -
+# 12 Aula 10 -
 
-# Aula 11 -
+# 13 Aula 11 -
 
-# Aula 12 -
+# 14 Aula 12 -
 
-# Aula 13 -
+# 15 Aula 13 -
 
-# Aula 14 -
+# 16 Aula 14 -
 
-# Aula 15 -
+# 17 Aula 15 -
 
-# Aula 16 -
+# 18 Aula 16 -
 
-# Aula 17 -
+# 19 Aula 17 -
+
+# 20 Andamento dos Estudos
+
+## 20.1 Assunto em andamento
+
+Atualmente estou escrevendo Aula 04.  
