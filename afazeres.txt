@@ -1,8 +1,8 @@
-ESCRITO EM 19/5/22
+ESCRITO EM 20/5/22
 ---
-PARA 20/5/22
+PARA 21/5/22
 ---
 Subir para github:
 
 escrever:
-	- aula 04
+	- aula 05
