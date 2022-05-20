@@ -5,4 +5,4 @@ PARA 21/5/22
 Subir para github:
 
 escrever:
-	- aula 05
+	- aula 06
