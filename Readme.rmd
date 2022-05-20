@@ -9,15 +9,15 @@ output:
   html_document:
     number_sections: true
     df_print: paged
+  odt_document:
+    number_sections: true
+  github_document: default
   word_document:
     toc: TRUE
     number_sections: true
-  github_document: default
   pdf_document:
     number_sections: true
     toc: TRUE
-  odt_document:
-    number_sections: true
 ---
 
 # Objetivo
@@ -164,6 +164,28 @@ Videoaulas de 'curso R para iniciantes'.\
 
 # Aula 05 - Operadores
 
+## Operadores básicos
+
+```{r, echo = FALSE}
+Operador <- c("Soma","Subtração","Divisão","Multiplicação","Potencia","Raiz","Exponencial","Log na base n")
+Simbolo <- c("+","-","/","*","** ou ^","sqrt(numero)","exp(numero)","log(numero,n)")
+tabela1 <- data.frame(Operador,Simbolo)
+tabela1
+```
+
+## Operadores logicos
+
+```{r, echo = FALSE}
+Operador_logico <- c("Igual", "Diferente", "Maior que", "Maior ou igual", "Menor que", "Menor ou igual","E", "OU", "Negação")
+Simbolos <- c("==","!=",">",">=","<","<=","&","|","!")
+tabela2 <- data.frame(Operador_logico,Simbolos)
+tabela2
+```
+- A resposta do sistema para uma operação logica é *TRUE* (verdadeiro) ou *FALSE* (falso). Ou em termos numericos 1 (verdadeiro), 0 (falso).\
+- No caso da negação (NOT), ele vem antes da operação como um todo.\
+  - Exemplo:\
+  $!5>4$\
+  
 \newpage
 
 # Aula 06 - 
@@ -218,4 +240,4 @@ Videoaulas de 'curso R para iniciantes'.\
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 05.\
+Atualmente estou escrevendo Aula 06.\
