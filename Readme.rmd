@@ -6,18 +6,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  html_document:
-    number_sections: true
-    df_print: paged
   odt_document:
     number_sections: true
-  github_document: default
   word_document:
     toc: TRUE
     number_sections: true
+  github_document: default
   pdf_document:
     number_sections: true
     toc: TRUE
+  html_document:
+    number_sections: true
+    df_print: paged
 ---
 
 # Objetivo
@@ -173,7 +173,7 @@ tabela1 <- data.frame(Operador,Simbolo)
 tabela1
 ```
 
-## Operadores logicos
+## Operadores lógicos
 
 ```{r, echo = FALSE}
 Operador_logico <- c("Igual", "Diferente", "Maior que", "Maior ou igual", "Menor que", "Menor ou igual","E", "OU", "Negação")
@@ -188,15 +188,27 @@ tabela2
   
 \newpage
 
-# Aula 06 - 
+# Aula 06 - Tipo de dados
 
-\newpage
+## Numerico - **numeric**
+- O **R** converte automaticamente variaveis númericas para tipo numeric.\
+- São variaveis contando números tanto inteiros (*int*), quanto *float*.\
+- Variaveis do tipo numeric podem realizar operações matemáticas.\
 
-# Aula 07 - 
+- É possivel converter um número qualquer (*numeric*) para um número inteiro (*int*) utilizando a função uma função:\
+  - **as**.**integer**(*variavel*)\
+- Observações:\ 
+  - A função "**as**.**interger**(*variavel*)" faz truncamente. CUIDADO!!!\
+  - Para fazer arredondamento, usar a função "**round**(*variavel*, *qtd_decimal*)".\
 
-\newpage
-
-# Aula 08 - 
+## Caractere e String - **character**
+- O **R** entende como variaveis do tipo *character* (caracter/string) todo dado que tiver entre aspas ("").\
+- Mesmo números se tiverem entre aspas, serão lidos como *character*.\
+- Tipo *character* não faz operações matemáticas.\
+- Tipo *character* faz operações lógicas (igual á, diferente de, ...)\
+  - Espaços em branco fazem diferença para operações lógicas.\
+  
+## Fatores - **factor**
 
 \newpage
 
@@ -240,4 +252,4 @@ tabela2
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 06.\
+Atualmente estou escrevendo Aula 08.\

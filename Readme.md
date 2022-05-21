@@ -54,7 +54,7 @@ Videoaulas de ‘curso R para iniciantes’.
 
 (Tipagem automatica/dinâmica)  
 
--   Atribuições de **variaveis** usar o sinal ‘**-\>**’ ou ‘**\<-**’.  
+-   Atribuições de **variaveis** usar o sinal ‘**->**’ ou ‘**\<-**’.  
 
 -   Atribuição de **funções** utilizar o sinal ‘**=**’.  
 
@@ -166,7 +166,7 @@ Videoaulas de ‘curso R para iniciantes’.
     ## 7   Exponencial   exp(numero)
     ## 8 Log na base n log(numero,n)
 
-## 7.2 Operadores logicos
+## 7.2 Operadores lógicos
 
     ##   Operador_logico Simbolos
     ## 1           Igual       ==
@@ -186,32 +186,62 @@ Videoaulas de ‘curso R para iniciantes’.
     -   Exemplo:  
         !5 \> 4  
 
-# 8 Aula 06 -
+# 8 Aula 06 - Tipo de dados
 
-# 9 Aula 07 -
+## 8.1 Numerico - **numeric**
 
-# 10 Aula 08 -
+-   O **R** converte automaticamente variaveis númericas para tipo
+    numeric.  
 
-# 11 Aula 09 -
+-   São variaveis contando números tanto inteiros (*int*), quanto
+    *float*.  
 
-# 12 Aula 10 -
+-   Variaveis do tipo numeric podem realizar operações matemáticas.  
 
-# 13 Aula 11 -
+-   É possivel converter um número qualquer (*numeric*) para um número
+    inteiro (*int*) utilizando a função uma função:  
 
-# 14 Aula 12 -
+    -   **as**.**integer**(*variavel*)  
 
-# 15 Aula 13 -
+-   Observações: 
 
-# 16 Aula 14 -
+    -   A função “**as**.**interger**(*variavel*)” faz truncamente.
+        CUIDADO!!!  
+    -   Para fazer arredondamento, usar a função “**round**(*variavel*,
+        *qtd_decimal*)”.  
 
-# 17 Aula 15 -
+## 8.2 Caractere e String - **character**
 
-# 18 Aula 16 -
+-   O **R** entende como variaveis do tipo *character* (caracter/string)
+    todo dado que tiver entre aspas (““).  
+-   Mesmo números se tiverem entre aspas, serão lidos como
+    *character*.  
+-   Tipo *character* não faz operações matemáticas.  
+-   Tipo *character* faz operações lógicas (igual á, diferente de, …)  
+    -   Espaços em branco fazem diferença para operações lógicas.  
 
-# 19 Aula 17 -
+## 8.3 Fatores - **factor**
 
-# 20 Andamento dos Estudos
+# 9 Aula 09 -
 
-## 20.1 Assunto em andamento
+# 10 Aula 10 -
 
-Atualmente estou escrevendo Aula 06.  
+# 11 Aula 11 -
+
+# 12 Aula 12 -
+
+# 13 Aula 13 -
+
+# 14 Aula 14 -
+
+# 15 Aula 15 -
+
+# 16 Aula 16 -
+
+# 17 Aula 17 -
+
+# 18 Andamento dos Estudos
+
+## 18.1 Assunto em andamento
+
+Atualmente estou escrevendo Aula 08.  
