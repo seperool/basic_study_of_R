@@ -6,18 +6,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document:
-    number_sections: true
-  word_document:
-    toc: TRUE
-    number_sections: true
-  github_document: default
   pdf_document:
     number_sections: true
     toc: TRUE
   html_document:
     number_sections: true
     df_print: paged
+  github_document: default
+  odt_document:
+    number_sections: true
+  word_document:
+    toc: TRUE
+    number_sections: true
 ---
 
 # Objetivo
@@ -188,9 +188,11 @@ tabela2
   
 \newpage
 
-# Aula 06 - Tipo de dados
+# Aula 06 á 09 - Tipo de dados
 
-## Numerico - **numeric**
+## Tipos de dados
+
+### Numerico - **numeric**
 - O **R** converte automaticamente variaveis númericas para tipo numeric.\
 - São variaveis contando números tanto inteiros (*int*), quanto *float*.\
 - Variaveis do tipo numeric podem realizar operações matemáticas.\
@@ -201,18 +203,51 @@ tabela2
   - A função "**as**.**interger**(*variavel*)" faz truncamente. CUIDADO!!!\
   - Para fazer arredondamento, usar a função "**round**(*variavel*, *qtd_decimal*)".\
 
-## Caractere e String - **character**
+### Caractere e String - **character**
 - O **R** entende como variaveis do tipo *character* (caracter/string) todo dado que tiver entre aspas ("").\
 - Mesmo números se tiverem entre aspas, serão lidos como *character*.\
 - Tipo *character* não faz operações matemáticas.\
 - Tipo *character* faz operações lógicas (igual á, diferente de, ...)\
   - Espaços em branco fazem diferença para operações lógicas.\
   
-## Fatores - **factor**
+### Fatores - **factor**
+
+- Factor é o tipo categoria/enumerado.\
+- O tipo **factor** não se trata de numeros, mas sim de categorias classificar determinado registro.\
+- O tipo **factor** não se comporta como numeros, logo não é possivel fazer operações matematicas nele. Porem aceita operações lógicas.\
+- Pacara tipar uma variavel (ou determinado vetor) como **factor** basta usar a função **as**.**factor**(*argumento*).\
+- No caso da conversão de vetores para tipo factor dos elementos:
+  - Elementos iguais serão considerados "niveis".\
+  - A função **summary**(*vetor*), numera o numero de elementos no mesmo "nivel".\
+
+### Lógico
+
+- É possivel salvar dentro de uma variavel uma operação do tipo lógica.\
+- O que é salvo é o resultado da operação, os valores "*TRUE*" ou "*FALSE*".\
+- O tipo lógico são palavras reservadas *TRUE* e *FALSE*. Se utiliza-las dentro de aspas elas se convertem em tipo character ("*TRUE*" e "*FALSE*").\
+- Se converter um tipo lógico para numerico *TRUE* assume o valor 1 e *FALSE* o valor 0.\
+- Sintaxe (exemplo):\
+*L* <- *variavel_1* < *variavel_2*\
 
 \newpage
 
-# Aula 09 - 
+## Descobrir e converter tipos
+
+### as.tipo
+
+- As funções começadas por "**as**.", seguidas do "*tipo*" e a "*variavel*" como argumento, servem para converter variaveis para outros tipos.\
+- Sintaxe (exemplo):\
+**as**.**factor**(*variavel*)\
+  - converte a variavel de um tipo qualquer para uma variavel do tipo factor.\
+
+### is.tipo
+
+- As funções começadas por "**is**.", seguidas por "*tipo*" e a "*variavel*" como argumento, servem para descobrir/confirmar o tipo da variavel.\
+- O retorno é "*TRUE*" ou "*FALSE*".
+- Sintaxe (exemplo):\
+**is**.**factor**(*variavel*)\
+  - Retorna "*TRUE*" se verdadeiro, o tipo da variavel for factor.\
+  - Ou retorna "*FALSE*" se falso, o tipo da variavel não for factor.\
 
 \newpage
 
@@ -252,4 +287,4 @@ tabela2
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 08.\
+Atualmente estou escrevendo Aula 10.\

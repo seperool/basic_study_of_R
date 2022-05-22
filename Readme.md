@@ -186,9 +186,11 @@ Videoaulas de ‘curso R para iniciantes’.
     -   Exemplo:  
         !5 \> 4  
 
-# 8 Aula 06 - Tipo de dados
+# 8 Aula 06 á 09 - Tipo de dados
 
-## 8.1 Numerico - **numeric**
+## 8.1 Tipos de dados
+
+### 8.1.1 Numerico - **numeric**
 
 -   O **R** converte automaticamente variaveis númericas para tipo
     numeric.  
@@ -210,7 +212,7 @@ Videoaulas de ‘curso R para iniciantes’.
     -   Para fazer arredondamento, usar a função “**round**(*variavel*,
         *qtd_decimal*)”.  
 
-## 8.2 Caractere e String - **character**
+### 8.1.2 Caractere e String - **character**
 
 -   O **R** entende como variaveis do tipo *character* (caracter/string)
     todo dado que tiver entre aspas (““).  
@@ -220,28 +222,76 @@ Videoaulas de ‘curso R para iniciantes’.
 -   Tipo *character* faz operações lógicas (igual á, diferente de, …)  
     -   Espaços em branco fazem diferença para operações lógicas.  
 
-## 8.3 Fatores - **factor**
+### 8.1.3 Fatores - **factor**
 
-# 9 Aula 09 -
+-   Factor é o tipo categoria/enumerado.  
+-   O tipo **factor** não se trata de numeros, mas sim de categorias
+    classificar determinado registro.  
+-   O tipo **factor** não se comporta como numeros, logo não é possivel
+    fazer operações matematicas nele. Porem aceita operações lógicas.  
+-   Pacara tipar uma variavel (ou determinado vetor) como **factor**
+    basta usar a função **as**.**factor**(*argumento*).  
+-   No caso da conversão de vetores para tipo factor dos elementos:
+    -   Elementos iguais serão considerados “niveis”.  
+    -   A função **summary**(*vetor*), numera o numero de elementos no
+        mesmo “nivel”.  
 
-# 10 Aula 10 -
+### 8.1.4 Lógico
 
-# 11 Aula 11 -
+-   É possivel salvar dentro de uma variavel uma operação do tipo
+    lógica.  
+-   O que é salvo é o resultado da operação, os valores “*TRUE*” ou
+    “*FALSE*”.  
+-   O tipo lógico são palavras reservadas *TRUE* e *FALSE*. Se
+    utiliza-las dentro de aspas elas se convertem em tipo character
+    (“*TRUE*” e “*FALSE*”).  
+-   Se converter um tipo lógico para numerico *TRUE* assume o valor 1 e
+    *FALSE* o valor 0.  
+-   Sintaxe (exemplo):  
+    *L* \<- *variavel_1* \< *variavel_2*  
 
-# 12 Aula 12 -
+## 8.2 Descobrir e converter tipos
 
-# 13 Aula 13 -
+### 8.2.1 as.tipo
 
-# 14 Aula 14 -
+-   As funções começadas por “**as**.”, seguidas do “*tipo*” e a
+    “*variavel*” como argumento, servem para converter variaveis para
+    outros tipos.  
+-   Sintaxe (exemplo):  
+    **as**.**factor**(*variavel*)  
+    -   converte a variavel de um tipo qualquer para uma variavel do
+        tipo factor.  
 
-# 15 Aula 15 -
+### 8.2.2 is.tipo
 
-# 16 Aula 16 -
+-   As funções começadas por “**is**.”, seguidas por “*tipo*” e a
+    “*variavel*” como argumento, servem para descobrir/confirmar o tipo
+    da variavel.  
+-   O retorno é “*TRUE*” ou “*FALSE*”.
+-   Sintaxe (exemplo):  
+    **is**.**factor**(*variavel*)  
+    -   Retorna “*TRUE*” se verdadeiro, o tipo da variavel for factor.  
+    -   Ou retorna “*FALSE*” se falso, o tipo da variavel não for
+        factor.  
 
-# 17 Aula 17 -
+# 9 Aula 10 -
 
-# 18 Andamento dos Estudos
+# 10 Aula 11 -
 
-## 18.1 Assunto em andamento
+# 11 Aula 12 -
 
-Atualmente estou escrevendo Aula 08.  
+# 12 Aula 13 -
+
+# 13 Aula 14 -
+
+# 14 Aula 15 -
+
+# 15 Aula 16 -
+
+# 16 Aula 17 -
+
+# 17 Andamento dos Estudos
+
+## 17.1 Assunto em andamento
+
+Atualmente estou escrevendo Aula 10.  
