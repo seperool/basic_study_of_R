@@ -130,28 +130,6 @@ Videoaulas de ‘curso R para iniciantes’.
 -   Sintaxe:  
     **str**(*argumento*)  
 
-## 6.6 Vetor
-
--   Vetores são variaves que aguardam diversos valores de mesmo tipo.  
--   No **R** o vetor é criado a partir da função “*c*()”.  
--   *Strings* e *caracteres* dentro do vetor devem ter seus valores
-    entre aspas (““).  
--   Sintaxe (exemplo):  
-    **c**(10,5,8,…)  
-
-## 6.7 Lista
-
--   Listas sao os objetos R que contem elementos de diferentes tipos
-    (diferente do vetor), como \_ numeros, strings, vetores e outra
-    lista dentro dela.  
--   Uma lista tambem pode conter uma matriz ou uma funcao como seus
-    elementos.  
--   *Strings* e *caracteres* dentro da lista devem ter seus valores
-    entre aspas (““).  
--   A lista e criada usando a funcao “*list*()”.  
--   Sintaxe (exemplo):  
-    **list**(azul, 10, c(5,8,9), …)  
-
 # 7 Aula 05 - Operadores
 
 ## 7.1 Operadores básicos
@@ -274,24 +252,57 @@ Videoaulas de ‘curso R para iniciantes’.
     -   Ou retorna “*FALSE*” se falso, o tipo da variavel não for
         factor.  
 
-# 9 Aula 10 -
+# 9 Aula 10 e 11 - Vetores e Listas
 
-# 10 Aula 11 -
+## 9.1 Vetor
 
-# 11 Aula 12 -
+-   Vetores são variaves que aguardam diversos valores de mesmo tipo.  
+-   No **R** o vetor é criado a partir da função “*c*()”.  
+-   *Strings* e *caracteres* dentro do vetor devem ter seus valores
+    entre aspas (““).  
+-   *length* indica o tamanho do vetor, o numero de elementos dentro do
+    vetor.  
+-   Caso seja inserido um dado do tipo *character* para um vetor do tipo
+    *numerico*, ele converte todo o vetor em tipo *character* (todos os
+    elementos em *character*).  
+-   Sintaxe (exemplo):  
+    **c**(10,5,8,…)  
+-   Acessando um valor dentro de uma vetor, uso a notaçao:  
+    *nome_do_vetor* \[*posição*\]  
 
-# 12 Aula 13 -
+## 9.2 Lista
 
-# 13 Aula 14 -
+-   Listas sao os objetos R que contem elementos de diferentes tipos
+    (diferente do vetor), como \_ numeros, strings, vetores e outra
+    lista dentro dela.  
+-   Uma lista tambem pode conter uma matriz ou uma funcao como seus
+    elementos.  
+-   *Strings* e *caracteres* dentro da lista devem ter seus valores
+    entre aspas (““).  
+-   A lista e criada usando a funcao “*list*()”.  
+-   Sintaxe (exemplo):  
+    **list**(azul, 10, c(5,8,9), …)  
+-   Acessando um valor dentro de uma lista.  
+    -   Notaçao:  
+        *nome_da_lista* \[\[*posição*\]\]  
+    -   Caso tenha uma lista ou vetor dentro de algum elemento:  
+        *nome_da_lista*
+        \[\[*posição*\]\]\[*posição_dento_da_lista_ou_vetor_do_elemento*\]  
 
-# 14 Aula 15 -
+# 10 Aula 12 - Matrizes e Data.frames
 
-# 15 Aula 16 -
+# 11 Aula 13 -
 
-# 16 Aula 17 -
+# 12 Aula 14 -
 
-# 17 Andamento dos Estudos
+# 13 Aula 15 -
 
-## 17.1 Assunto em andamento
+# 14 Aula 16 -
 
-Atualmente estou escrevendo Aula 10.  
+# 15 Aula 17 -
+
+# 16 Andamento dos Estudos
+
+## 16.1 Assunto em andamento
+
+Atualmente estou escrevendo Aula 11.  
