@@ -1,9 +1,9 @@
-ESCRITO EM 22/5/22
+ESCRITO EM 23/5/22
 ---
-PARA 23/5/22
+PARA 24/5/22
 ---
 Subir para github:
-	- aula 10 e 11
+	
 Escrever:
 	- aula 12
 Pull:
