@@ -99,7 +99,9 @@ Videoaulas de ‘curso R para iniciantes’.
 
 -   A função **summary**() retorna o resumo de variaveis.  
 -   O retorno depende do argumento (se for um vetor, uma lista, um
-    data.table).  
+    data.frame).  
+-   O retorno para uma matriz ou **data**.**frame**, vai ser os metodos
+    aplicados a cada campo/coluna.  
 -   O retorno da função, no geral, retorna diversos metodos aplicados
     aos dados, tais como:  
     -   valor mínimo  
@@ -109,7 +111,7 @@ Videoaulas de ‘curso R para iniciantes’.
     -   3º quantil  
     -   valor máximo  
 -   Sintaxe:  
-    **summary**(*variavel*)  
+    **summary**(*nome_variavel*)  
 
 ## 6.4 Descobrir a classe de uma variavel - **class**
 
@@ -289,20 +291,87 @@ Videoaulas de ‘curso R para iniciantes’.
         *nome_da_lista*
         \[\[*posição*\]\]\[*posição_dento_da_lista_ou_vetor_do_elemento*\]  
 
-# 10 Aula 12 - Matrizes e Data.frames
+# 10 Aula 12 e 13 - Matrizes e Data.frames
 
-# 11 Aula 13 -
+## 10.1 Matrizes
 
-# 12 Aula 14 -
+-   Vetor com duas dimensões.  
+-   A matriz aceita só um tipo de dado, assim como vetores.  
+-   Caso entrar com dados de diversos *tipos*, ela se transforma numa
+    matriz não numerica para comportar.  
+-   Criar uma matriz:  
+    *variavel* \<- **matrix**(**data** = NA, **nrow** = 1, **ncol** = 1,
+    **byrow** = FALSE, **dimnames** = NULL)  
+    -   **data** = inserir dados, incluir listas ou vetores.  
+        **data** = **c**(*vetor1*,*vetor2*,*vetor3*)  
+    -   **nrow** = numero de linhas.  
+    -   **ncol** = numero de colunas.  
+    -   **byrow** = lógica. Se FALSE (o padrão) a matriz é preenchida
+        por colunas, caso contrário a matriz é preenchida por linhas.  
+    -   **dimnames** = NULL ou uma lista de comprimento 2 fornecendo os
+        nomes das linhas e colunas, respectivamente. Uma lista vazia é
+        tratada como NULL e uma lista de comprimento um como nomes de
+        linha.  
+        **dimnames** =
+        **list**(**c**(“*lx*”,“*ly*”,“*lz*”),**c**(“*c1*”,“*c2*”,“*c3*”))  
+-   Adicionando registros/linhas, usar a função **rbind**().  
+    **rbind**(*vetor1*,*vetor2*,…)  
+-   Adicionando campos/colunas, usar a função **cbind**().  
+    **cbind**(*vetor1*,*vetor2*,…)  
+-   Acessando dados dentro da matriz:  
+    -   Acessando um elemento:  
+        *variavel_da_matrix* \[*linha*, *coluna*\]  
+    -   Acessando uma linha:  
+        *variavel_da_matrix* \[*linha*,\]  
+    -   Acessando uma coluna:  
+        *variavel_da_matrix* \[, *coluna*\]  
 
-# 13 Aula 15 -
+## 10.2 Tabela de dados - Data.frames
 
-# 14 Aula 16 -
+-   Na tabela de dados podemos ter dois ou mais *tipos* de dados
+    misturados, sendo uma coluna/campo para cada tipo.  
+-   Criando um data.frame a partir de vetores:  
+    *variavel_df* \<-
+    **data**.**frame**(*nome_vetor1*,*nome_vetor2*,…)  
+    -   O nome das veriaveis dos vetores serão o nome dos
+        campos/colunas.  
+-   Acessando dados dentro do **data**.**frame**:  
+    -   Acessando um campo inteiro, pode usar o nome do campo:  
+        -   retorna o vetor dos dados, com o *tipo*
+            **data**.**frame**.  
+            *nome_do_df* \[*numero_da_coluna*\]  
+        -   retorna o vetor com os dados, com o *tipo* original da
+            coluna.  
+            *nome_do_df***$***nome_do_campo*  
+    -   Acessando um elemento:  
+        *nome_do_df* \[*linha*, *coluna*\]  
+    -   Acessando uma linha:  
+        *nome_do_df* \[*linha*,\]  
+-   Excluindo uma coluna:  
+    *nome_do_df***$***nome_coluna* \<- **NULL**  
+-   Inserindo uma nova coluna:  
+    *nome_do_df***$***nome_nova_coluna* \<- *valor*  
 
-# 15 Aula 17 -
+## 10.3 Visualizar dados matriz e data.frame - VIEW
 
-# 16 Andamento dos Estudos
+-   Para apresentar os dados no console, basta penas chamar o nome da
+    variavel com o dado armazenado.  
+    *nome_da_variavel*  
 
-## 16.1 Assunto em andamento
+-   A função **VIEW** é usada para visualização de dados em formato
+    planilha.  
+    **VIEW**(*variavel_matriz/data.frame*)  
 
-Atualmente estou escrevendo Aula 11.  
+# 11 Aula 14 -
+
+# 12 Aula 15 -
+
+# 13 Aula 16 -
+
+# 14 Aula 17 -
+
+# 15 Andamento dos Estudos
+
+## 15.1 Assunto em andamento
+
+Atualmente estou escrevendo Aula 14.  

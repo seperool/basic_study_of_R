@@ -6,18 +6,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document:
-    number_sections: true
-  word_document:
-    toc: TRUE
-    number_sections: true
-  github_document: default
-  pdf_document:
-    number_sections: true
-    toc: TRUE
   html_document:
     number_sections: true
     df_print: paged
+  odt_document:
+    number_sections: true
+  github_document: default
+  word_document:
+    toc: TRUE
+    number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: TRUE
 ---
 
 # Objetivo
@@ -115,7 +115,8 @@ Videoaulas de 'curso R para iniciantes'.\
 
 ## **summary** - Resumo dos dados
 - A função **summary**() retorna o resumo de variaveis.\
-- O retorno depende do argumento (se for um vetor, uma lista, um data.table).\
+- O retorno depende do argumento (se for um vetor, uma lista, um data.frame).\
+- O retorno para uma matriz ou **data**.**frame**, vai ser os metodos aplicados a cada campo/coluna.\
 - O retorno da função, no geral, retorna diversos metodos aplicados aos dados, tais como:\
   - valor mínimo\
   - 1º quantil\
@@ -124,7 +125,7 @@ Videoaulas de 'curso R para iniciantes'.\
   - 3º quantil\
   - valor máximo\
 - Sintaxe:\
-**summary**(*variavel*)\
+**summary**(*nome_variavel*)\
 
 ## Descobrir a classe de uma variavel - **class**
 - A função "**class**()" retorna a que classe do objeto do argemunto pertence.\
@@ -262,11 +263,61 @@ tabela2
 
 \newpage
 
-# Aula 12 - Matrizes e Data.frames
+# Aula 12 e 13 - Matrizes e Data.frames
 
-\newpage
+## Matrizes
 
-# Aula 13 - 
+- Vetor com duas dimensões.\
+- A matriz aceita só um tipo de dado, assim como vetores.\
+- Caso entrar com dados de diversos *tipos*, ela se transforma numa matriz não numerica para comportar.\
+- Criar uma matriz:\
+*variavel* <- **matrix**(**data** = NA, **nrow** = 1, **ncol** = 1, **byrow** = FALSE, **dimnames** = NULL)\
+  - **data** = inserir dados, incluir listas ou vetores.\
+  **data** = **c**(*vetor1*,*vetor2*,*vetor3*)\
+  - **nrow** = numero de linhas.\
+  - **ncol** = numero de colunas.\
+  - **byrow** = lógica. Se FALSE (o padrão) a matriz é preenchida por colunas, caso contrário a matriz é preenchida por linhas.\
+  - **dimnames** = NULL ou uma lista de comprimento 2 fornecendo os nomes das linhas e colunas, respectivamente. Uma lista vazia é tratada como NULL e uma lista de comprimento um como nomes de linha.\
+  **dimnames** = **list**(**c**("*lx*","*ly*","*lz*"),**c**("*c1*","*c2*","*c3*"))\
+- Adicionando registros/linhas, usar a função **rbind**().\
+**rbind**(*vetor1*,*vetor2*,...)\
+- Adicionando campos/colunas, usar a função **cbind**().\
+**cbind**(*vetor1*,*vetor2*,...)\
+- Acessando dados dentro da matriz:\
+  - Acessando um elemento:\
+  *variavel_da_matrix* [*linha*, *coluna*]\
+  - Acessando uma linha:\
+  *variavel_da_matrix* [*linha*,]\
+  - Acessando uma coluna:\
+  *variavel_da_matrix* [, *coluna*]\
+  
+## Tabela de dados - Data.frames
+
+- Na tabela de dados podemos ter dois ou mais *tipos* de dados misturados, sendo uma coluna/campo para cada tipo.\
+- Criando um data.frame a partir de vetores:\
+*variavel_df* <- **data**.**frame**(*nome_vetor1*,*nome_vetor2*,...)\
+  - O nome das veriaveis dos vetores serão o nome dos campos/colunas.\
+- Acessando dados dentro do **data**.**frame**:\
+  - Acessando um campo inteiro, pode usar o nome do campo:\
+    - retorna o vetor dos dados, com o *tipo* **data**.**frame**.\
+    *nome_do_df* [*numero_da_coluna*]\
+    - retorna o vetor com os dados, com o *tipo* original da coluna.\
+    *nome_do_df***$***nome_do_campo*\
+  - Acessando um elemento:\
+  *nome_do_df* [*linha*, *coluna*]\
+  - Acessando uma linha:\
+  *nome_do_df* [*linha*,]\
+- Excluindo uma coluna:\
+*nome_do_df***$***nome_coluna* <- **NULL**\
+- Inserindo uma nova coluna:\
+*nome_do_df***$***nome_nova_coluna* <- *valor*\
+
+## Visualizar dados matriz e data.frame - VIEW
+- Para apresentar os dados no console, basta penas chamar o nome da variavel com o dado armazenado.\
+*nome_da_variavel*\
+
+- A função **VIEW** é usada para visualização de dados em formato planilha.\
+**VIEW**(*variavel_matriz/data.frame*)\
 
 \newpage
 
@@ -290,4 +341,4 @@ tabela2
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 11.\
+Atualmente estou escrevendo Aula 14.\
