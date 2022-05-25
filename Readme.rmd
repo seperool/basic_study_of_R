@@ -6,18 +6,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  html_document:
-    number_sections: true
-    df_print: paged
-  odt_document:
-    number_sections: true
-  github_document: default
-  word_document:
-    toc: TRUE
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: TRUE
+  html_document:
+    number_sections: true
+    df_print: paged
+  github_document: default
+  odt_document:
+    number_sections: true
+  word_document:
+    toc: TRUE
+    number_sections: true
 ---
 
 # Objetivo
@@ -321,11 +321,31 @@ tabela2
 
 \newpage
 
-# Aula 14 - 
+# Aula 14 e 15 - Filtros
 
-\newpage
+- Acessar, extrair e modificar dados em variaveis.\
 
-# Aula 15 - 
+## Vetor
+- Acessar dados:\
+  - Acessar um elemento em determinada posição.\
+  *nome_vetor* [*posição_do_elemento*]\
+  - Acessar todos os elementos, menos determinada posição.\
+  *nome_vetor* [ -*posição_do_elemento_excluido*]\
+  - Dados entre posições (da *posição1* a *posição2*, *posição1* e *posição2* inclusas).\
+  *nome_vetor* [ *posição1*:*posição2*]\
+  - Acessando a posição final do vetor com ajuda da função **length**() (devolve o tamanho do vetor, ou seja, a ultima posição).\
+  *nome_vetor* [ *posição1*:**length**(*nome_vetor*)]\
+  - Acessando posição determinada atraves de operação matematica.\
+  *nome_vetor* [ **length**(*nome_vetor*)-2:**length**(*nome_vetor*)]\
+  - Acessando dados atraves de condições.\
+  *nome_vetor* [*nome_vetor***==***condição*]\
+  *nome_vetor* [*nome_vetor***!=***condição*]\
+  *nome_vetor* [*nome_vetor***>***condição*]\
+  *nome_vetor* [*nome_vetor***<=***condição*]\
+  
+## Data.Frames
+
+
 
 \newpage
 

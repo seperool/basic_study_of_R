@@ -362,16 +362,41 @@ Videoaulas de ‘curso R para iniciantes’.
     planilha.  
     **VIEW**(*variavel_matriz/data.frame*)  
 
-# 11 Aula 14 -
+# 11 Aula 14 e 15 - Filtros
 
-# 12 Aula 15 -
+-   Acessar, extrair e modificar dados em variaveis.  
 
-# 13 Aula 16 -
+## 11.1 Vetor
 
-# 14 Aula 17 -
+-   Acessar dados:  
+    -   Acessar um elemento em determinada posição.  
+        *nome_vetor* \[*posição_do_elemento*\]  
+    -   Acessar todos os elementos, menos determinada posição.  
+        *nome_vetor* \[ -*posição_do_elemento_excluido*\]  
+    -   Dados entre posições (da *posição1* a *posição2*, *posição1* e
+        *posição2* inclusas).  
+        *nome_vetor* \[ *posição1*:*posição2*\]  
+    -   Acessando a posição final do vetor com ajuda da função
+        **length**() (devolve o tamanho do vetor, ou seja, a ultima
+        posição).  
+        *nome_vetor* \[ *posição1*:**length**(*nome_vetor*)\]  
+    -   Acessando posição determinada atraves de operação matematica.  
+        *nome_vetor* \[
+        **length**(*nome_vetor*)-2:**length**(*nome_vetor*)\]  
+    -   Acessando dados atraves de condições.  
+        *nome_vetor* \[*nome_vetor***==***condição*\]  
+        *nome_vetor* \[*nome_vetor***!=***condição*\]  
+        *nome_vetor* \[*nome_vetor***\>***condição*\]  
+        *nome_vetor* \[*nome_vetor***\<=***condição*\]  
 
-# 15 Andamento dos Estudos
+## 11.2 Data.Frames
 
-## 15.1 Assunto em andamento
+# 12 Aula 16 -
+
+# 13 Aula 17 -
+
+# 14 Andamento dos Estudos
+
+## 14.1 Assunto em andamento
 
 Atualmente estou escrevendo Aula 14.  
