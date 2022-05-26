@@ -1,10 +1,10 @@
-ESCRITO EM 24/5/22
+ESCRITO EM 26/5/22
 ---
-PARA 25/5/22
+PARA 27/5/22
 ---
 Subir para github:
-	- aula 14
+	
 Escrever:
-	- aula 15
+	- aula 16
 Pull:
 	- windows
