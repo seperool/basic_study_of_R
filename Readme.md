@@ -388,8 +388,40 @@ Videoaulas de ‘curso R para iniciantes’.
         *nome_vetor* \[*nome_vetor***!=***condição*\]  
         *nome_vetor* \[*nome_vetor***\>***condição*\]  
         *nome_vetor* \[*nome_vetor***\<=***condição*\]  
+-   Observação:  
+    -   A função **length**() devolve o tamanho do vetor, ou seja, a
+        última posição.  
 
 ## 11.2 Data.Frames
+
+-   Acessar dados:  
+    -   Acessando coluna/campo pelo numero da posição:  
+        *df*\[*numero_da_coluna*\]  
+    -   Acessando registro pelo numero da linha:  
+        *df*\[*numero_da_linha*,\]  
+    -   Acessando intervalo de colunas (posições inclusas):  
+        *df*\[*numero_da_coluna_inicial*:*numero_da_coluna_final*\]  
+    -   Acessando intervalo de linhas (posições inclusas):  
+        *df*\[*numero_da_linha_inicial*:*numero_da_linha_final*,\]  
+    -   Excluindo uma coluna do filtro:  
+        *df*\[-*numero_da_coluna*\]  
+    -   Juntando linha e coluna para acessar dados:  
+        *df*\[*numero_linha*,*numero_coluna*\]  
+    -   Acessando determinado registro de intervalo de colunas:  
+        *df*\[*numero_linha*,*numero_da_coluna_inicial*:*numero_da_coluna_final*\]  
+    -   Acessando registro, excluindo determinada coluna:  
+        *df*\[*numero_lina*,-*numero_coluna*\]  
+    -   Acessando intervalo de linhas e colunas:  
+        *df*\[*numero_da_linha_inicial*:*numero_da_linha_final*,*numero_da_coluna_inicial*:*numero_da_coluna_final*\]  
+    -   Excluindo deversas colunas do filtro:  
+        *df*\[**c**(-*numero_coluna1*,-*numero_coluna2*,-*numero_coluna3*,…)\]  
+-   Filtro por nome da coluna:  
+    -   Acessando um elemento da coluna:  
+        *df***$***nome_coluna*\[*numero_registro*\]  
+    -   Acessando um intervalo de registro:  
+        *df***$***nome_coluna*\[*numero_registro_inicial*:*numero_registro_final*\]  
+    -   Acessar determinados registros usando operador lógico:  
+        *df***$***nome_coluna*\[*valor***==***condição*\]  
 
 # 12 Aula 16 -
 
@@ -399,4 +431,4 @@ Videoaulas de ‘curso R para iniciantes’.
 
 ## 14.1 Assunto em andamento
 
-Atualmente estou escrevendo Aula 14.  
+Atualmente estou escrevendo Aula 16.  
