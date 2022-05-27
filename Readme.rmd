@@ -6,18 +6,18 @@ output:
   pdf_document:
     number_sections: true
     toc: TRUE
+  odt_document:
+    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document:
-    number_sections: true
   github_document: default
-  word_document:
-    toc: TRUE
-    number_sections: true
   html_document:
     number_sections: true
     df_print: paged
+  word_document:
+    toc: TRUE
+    number_sections: true
 ---
 
 # Objetivo
@@ -381,11 +381,61 @@ tabela2
 
 \newpage
 
-# Aula 16 - 
+# Aula 16 - Condicionais **IF**, **FOR** e **WHILE**
+
+## **IF**
+
+- **IF**\
+  - "**Se** algo é verdade, faça isso..."\
+  - **Se** uma *condição* for verdadeira algo deve ser executado.\ 
+  - Sintaxe:\
+  **if** (*condição*){\
+  *operção*\
+  }\
+- **ELSE**\
+  - "**Se** algo é verdade, faça isso..., **senão** faça aquilo outro"\
+  - O **else** faz algo se a condição do **if** não for atendido.\
+  - Sintaxe:\
+  **if** (*condição*){\
+  *operação1*\
+  } **else** {\
+  *operação2*\
+  }\
+- **ELSE IF**\
+  - "**Se** algo é verdadeiro faça isso ..., **caso** derterminada *condição* faça aquilo outro, **senão** ..."\
+  - Cria **casos** com *condições* a serem avaliadas, depois que anterior é analisada.\
+  - Podem existir varios **else if**.\
+  - Sintaxe:\
+  **if** (*condição1*){\
+  *operação1*\
+  } **else** **if** (*condição2*){\
+  *operação2*\
+  } **else** {\
+  *operação3*\
+  }\
 
 \newpage
 
-# Aula 17 - 
+## Loop **FOR**
+- "Para cada posição do *vetor* faça isso..."\
+- **FOR** é usado para percorre um *vetor*.\
+- A variavel *i* é incrementada a cada loop.\
+- Sintaxe:\
+  **for** (*i* **in** *vetor*){\
+  *operação*\
+  }\
+  
+## Loop **WHILE**
+- "Enquanto a condição for verdadeira, execute..."\
+- Executa o loop enquanto uma determinada *condição* (operção lógica) for verdadeira.\
+- Sintaxe:\
+  **while**(*condição*){\
+  *operção*\
+  }\
+
+\newpage
+
+# Aula 17 - Função
 
 \newpage
 
@@ -393,4 +443,4 @@ tabela2
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 16.\
+Atualmente estou escrevendo Aula 17.\

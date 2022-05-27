@@ -423,12 +423,66 @@ Videoaulas de ‘curso R para iniciantes’.
     -   Acessar determinados registros usando operador lógico:  
         *df***$***nome_coluna*\[*valor***==***condição*\]  
 
-# 12 Aula 16 -
+# 12 Aula 16 - Condicionais **IF**, **FOR** e **WHILE**
 
-# 13 Aula 17 -
+## 12.1 **IF**
+
+-   **IF**  
+    -   “**Se** algo é verdade, faça isso…”  
+    -   **Se** uma *condição* for verdadeira algo deve ser executado. 
+    -   Sintaxe:  
+        **if** (*condição*){  
+        *operção*  
+        }  
+-   **ELSE**  
+    -   “**Se** algo é verdade, faça isso…, **senão** faça aquilo
+        outro”  
+    -   O **else** faz algo se a condição do **if** não for atendido.  
+    -   Sintaxe:  
+        **if** (*condição*){  
+        *operação1*  
+        } **else** {  
+        *operação2*  
+        }  
+-   **ELSE IF**  
+    -   “**Se** algo é verdadeiro faça isso …, **caso** derterminada
+        *condição* faça aquilo outro, **senão** …”  
+    -   Cria **casos** com *condições* a serem avaliadas, depois que
+        anterior é analisada.  
+    -   Podem existir varios **else if**.  
+    -   Sintaxe:  
+        **if** (*condição1*){  
+        *operação1*  
+        } **else** **if** (*condição2*){  
+        *operação2*  
+        } **else** {  
+        *operação3*  
+        }  
+
+## 12.2 Loop **FOR**
+
+-   “Para cada posição do *vetor* faça isso…”  
+-   **FOR** é usado para percorre um *vetor*.  
+-   A variavel *i* é incrementada a cada loop.  
+-   Sintaxe:  
+    **for** (*i* **in** *vetor*){  
+    *operação*  
+    }  
+
+## 12.3 Loop **WHILE**
+
+-   “Enquanto a condição for verdadeira, execute…”  
+-   Executa o loop enquanto uma determinada *condição* (operção lógica)
+    for verdadeira.  
+-   Sintaxe:  
+    **while**(*condição*){  
+    *operção*  
+    }  
+
+# 13 Aula 17 - Função
 
 # 14 Andamento dos Estudos
 
 ## 14.1 Assunto em andamento
 
-Atualmente estou escrevendo Aula 16.  
+Atualmente estou escrevendo Aula 17.  
