@@ -3,8 +3,8 @@ ESCRITO EM 26/5/22
 PARA 27/5/22
 ---
 Subir para github:
-	
-Escrever:
 	- aula 16
+Escrever:
+	- aula 17
 Pull:
 	- windows
