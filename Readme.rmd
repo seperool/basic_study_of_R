@@ -3,18 +3,18 @@ title: "Curso de R básico"
 author: "Sergio Pedro R Oliveira"
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
-    number_sections: true
-    toc: TRUE
-  odt_document:
-    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
-  github_document: default
+  odt_document:
+    number_sections: true
   html_document:
     number_sections: true
     df_print: paged
+  github_document: default
+  pdf_document:
+    number_sections: true
+    toc: TRUE
   word_document:
     toc: TRUE
     number_sections: true
@@ -435,7 +435,26 @@ tabela2
 
 \newpage
 
-# Aula 17 - Função
+# Aula 17 - Função e print
+
+## Função - **function**
+- Criar funções tem o objeto de evitar ter que reescrever varias vezes as mesmas instruções, abreviar esse trabalho.\
+- Uma função é um conjunto de instruções organizadas em conjunto para executar uma tarefa específica.\
+- Podem ser passados diversos *parametros* para dentro da função, basta informar isso na criação da função. *Parametros* são valores ou variaveis que são colocados para dentro da função.\
+- As variaveis criadas e usadas dentro de **functions** (funções) são locais, não existem fora da função, deixam de existir depois que a função é executada.\
+- A instrução **return**() devolve o *argumento* para fora da função.\
+- Sintaxe:\
+  *nome_da_função* **<-** **function**(*parametro_1*,...){\
+  *instruções*\
+  **print**(*variavel*)\
+  **return** (*variavel_argumento*)\
+  }\
+
+## Print
+- A função **print**(*argumento*) imprime seu argumento na tela.\
+- É uma função útil para usar dentro de **functions** (funções), dado que as variaveis dentro de **function** são locais.\
+Sintaxe:\
+**print**(*variavel*)\
 
 \newpage
 
@@ -443,4 +462,4 @@ tabela2
 
 ## Assunto em andamento
 
-Atualmente estou escrevendo Aula 17.\
+Concluído.\

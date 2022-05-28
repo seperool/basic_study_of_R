@@ -479,10 +479,39 @@ Videoaulas de ‘curso R para iniciantes’.
     *operção*  
     }  
 
-# 13 Aula 17 - Função
+# 13 Aula 17 - Função e print
+
+## 13.1 Função - **function**
+
+-   Criar funções tem o objeto de evitar ter que reescrever varias vezes
+    as mesmas instruções, abreviar esse trabalho.  
+-   Uma função é um conjunto de instruções organizadas em conjunto para
+    executar uma tarefa específica.  
+-   Podem ser passados diversos *parametros* para dentro da função,
+    basta informar isso na criação da função. *Parametros* são valores
+    ou variaveis que são colocados para dentro da função.  
+-   As variaveis criadas e usadas dentro de **functions** (funções) são
+    locais, não existem fora da função, deixam de existir depois que a
+    função é executada.  
+-   A instrução **return**() devolve o *argumento* para fora da
+    função.  
+-   Sintaxe:  
+    *nome_da_função* **\<-** **function**(*parametro_1*,…){  
+    *instruções*  
+    **print**(*variavel*)  
+    **return** (*variavel_argumento*)  
+    }  
+
+## 13.2 Print
+
+-   A função **print**(*argumento*) imprime seu argumento na tela.  
+-   É uma função útil para usar dentro de **functions** (funções), dado
+    que as variaveis dentro de **function** são locais.  
+    Sintaxe:  
+    **print**(*variavel*)  
 
 # 14 Andamento dos Estudos
 
 ## 14.1 Assunto em andamento
 
-Atualmente estou escrevendo Aula 17.  
+Concluído.  
