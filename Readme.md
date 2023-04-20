@@ -54,7 +54,7 @@ Videoaulas de ‘curso R para iniciantes’.
 
 (Tipagem automatica/dinâmica)  
 
--   Atribuições de **variaveis** usar o sinal ‘**->**’ ou ‘**\<-**’.  
+-   Atribuições de **variaveis** usar o sinal ‘**-\>**’ ou ‘**\<-**’.  
 
 -   Atribuição de **funções** utilizar o sinal ‘**=**’.  
 
@@ -136,28 +136,34 @@ Videoaulas de ‘curso R para iniciantes’.
 
 ## 7.1 Operadores básicos
 
-    ##        Operador       Simbolo
-    ## 1          Soma             +
-    ## 2     Subtração             -
-    ## 3       Divisão             /
-    ## 4 Multiplicação             *
-    ## 5      Potencia       ** ou ^
-    ## 6          Raiz  sqrt(numero)
-    ## 7   Exponencial   exp(numero)
-    ## 8 Log na base n log(numero,n)
+| Operador Básico |    Símbolo    |
+|:---------------:|:-------------:|
+|      Soma       |      \+       |
+|    Subtração    |      \-       |
+|     Divisão     |       /       |
+|  Multiplicação  |      \*       |
+|    Potencia     |   \*\* ou ^   |
+|      Raiz       | sqrt(numero)  |
+|   Exponencial   |  exp(numero)  |
+|  Log na base n  | log(numero,n) |
+
+Operadores Básicos
 
 ## 7.2 Operadores lógicos
 
-    ##   Operador_logico Simbolos
-    ## 1           Igual       ==
-    ## 2       Diferente       !=
-    ## 3       Maior que        >
-    ## 4  Maior ou igual       >=
-    ## 5       Menor que        <
-    ## 6  Menor ou igual       <=
-    ## 7               E        &
-    ## 8              OU        |
-    ## 9         Negação        !
+| Operador Lógico | Símbolo |
+|:---------------:|:-------:|
+|      Igual      |   ==    |
+|    Diferente    |   !=    |
+|    Maior que    |   \>    |
+| Maior ou igual  |   \>=   |
+|    Menor que    |   \<    |
+| Menor ou igual  |   \<=   |
+|        E        |    &    |
+|       OU        |   \|    |
+|     Negação     |    !    |
+
+Operadores Lógicos
 
 -   A resposta do sistema para uma operação logica é *TRUE* (verdadeiro)
     ou *FALSE* (falso). Ou em termos numericos 1 (verdadeiro), 0

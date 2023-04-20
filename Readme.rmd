@@ -6,18 +6,18 @@ output:
   md_document:
     number_sections: true
     variant: markdown_github
-  odt_document:
-    number_sections: true
-  html_document:
-    number_sections: true
-    df_print: paged
-  github_document: default
   pdf_document:
     number_sections: true
     toc: TRUE
   word_document:
     toc: TRUE
     number_sections: true
+  github_document: default
+  odt_document:
+    number_sections: true
+  html_document:
+    number_sections: true
+    df_print: paged
 ---
 
 # Objetivo
@@ -27,6 +27,10 @@ Estudo dirigido de básico de linguagem R.\
 # Referência
 
 Videoaulas de 'curso R para iniciantes'.\
+
+```{r pacotes,echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+```
 
 \newpage
 
@@ -148,20 +152,20 @@ Videoaulas de 'curso R para iniciantes'.\
 
 ## Operadores básicos
 
-```{r, echo = FALSE}
+```{r operadores básicos, echo = FALSE}
 Operador <- c("Soma","Subtração","Divisão","Multiplicação","Potencia","Raiz","Exponencial","Log na base n")
 Simbolo <- c("+","-","/","*","** ou ^","sqrt(numero)","exp(numero)","log(numero,n)")
 tabela1 <- data.frame(Operador,Simbolo)
-tabela1
+kable(tabela1, col.names = c("Operador Básico","Símbolo"), align = "cc" ,caption = "Operadores Básicos" )
 ```
 
 ## Operadores lógicos
 
-```{r, echo = FALSE}
+```{r Operadores Lógicos, echo = FALSE}
 Operador_logico <- c("Igual", "Diferente", "Maior que", "Maior ou igual", "Menor que", "Menor ou igual","E", "OU", "Negação")
 Simbolos <- c("==","!=",">",">=","<","<=","&","|","!")
 tabela2 <- data.frame(Operador_logico,Simbolos)
-tabela2
+kable(tabela2, col.names = c("Operador Lógico", "Símbolo"), align = "cc",caption = "Operadores Lógicos")
 ```
 - A resposta do sistema para uma operação logica é *TRUE* (verdadeiro) ou *FALSE* (falso). Ou em termos numericos 1 (verdadeiro), 0 (falso).\
 - No caso da negação (NOT), ele vem antes da operação como um todo.\
