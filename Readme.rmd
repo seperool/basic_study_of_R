@@ -3,34 +3,72 @@ title: "Curso de R básico"
 author: "Sergio Pedro R Oliveira"
 date: "`r Sys.Date()`"
 output:
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  odt_document:
+    number_sections: true
   pdf_document:
     number_sections: true
-    toc: TRUE
-  odt_document:
+    toc: false
+  github_document: default
+  word_document:
+    toc: false
     number_sections: true
   html_document:
     number_sections: true
     df_print: paged
-  github_document: default
-  word_document:
-    toc: TRUE
-    number_sections: true
-  md_document:
-    number_sections: true
-    variant: markdown_github
 ---
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{roman}
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{SUMÁRIO}
+\tableofcontents
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\listoffigures
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\listoftables
+```
+
+```{r Pacotes, message=FALSE, warning=FALSE, echo=FALSE}
+library(knitr)
+library(rmarkdown)
+library(readr)
+library(tibble)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(data.table)
+```
+
+\newpage
 
 # Objetivo
 
 Estudo dirigido de básico de linguagem R.\
 
+\pagenumbering{arabic}
+\newpage
+
 # Referência
 
 Videoaulas de 'curso R para iniciantes'.\
-
-```{r pacotes,echo=FALSE, message=FALSE, warning=FALSE}
-library(knitr)
-```
 
 \newpage
 
