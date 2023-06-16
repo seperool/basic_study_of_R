@@ -1,5 +1,6 @@
 install.packages("stringr") # Pacote para trabalhar com strings, texto
 install.packages("Rmarkdown") # Pacote para fazer relatorio, rmd
+install.packages("distill") #Autor: url, affiliation e affiliation_url
 install.packages("knitr") # Interpretação e compilação do documento rmd, formato tabela kable
 install.packages("kableExtra") # Mais opções de formatação de tabelas kable
 install.packages("pander") # Converte R em pandoc, para gerar .md
@@ -20,6 +21,9 @@ install.packages("foreign") # Leitura de arquivos com extensão minitab, Octave,
 #Pacotes auxiliares ggplot2
 install.packages("ggthemes") # Temas adicionais para graficos
 install.packages("grid") #
+
+# Pacote com paleta de cores
+install.packages("RColorBrewer")
 
 # Conectores com banco de dados
 install.packages("DBI")
