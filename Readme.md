@@ -214,8 +214,8 @@ Operadores Lógicos
     classificar determinado registro.  
 -   O tipo **factor** não se comporta como numeros, logo não é possivel
     fazer operações matematicas nele. Porem aceita operações lógicas.  
--   Pacara tipar uma variavel (ou determinado vetor) como **factor**
-    basta usar a função `as.factor(argumento)`.  
+-   Para tipar uma variável (ou determinado vetor) como **factor** basta
+    usar a função `as.factor(argumento)`.  
 -   No caso da conversão de vetores para tipo factor dos elementos:
     -   Elementos iguais serão considerados “niveis”.  
     -   A função `summary(vetor)`, numera o numero de elementos no mesmo
