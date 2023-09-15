@@ -3,21 +3,21 @@ title: "Curso de R básico"
 author: "Sergio Pedro R Oliveira"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    number_sections: true
-    df_print: paged
-  word_document:
-    toc: false
-    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
-  github_document: default
-  odt_document:
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: false
+  odt_document:
+    number_sections: true
+  github_document: default
+  word_document:
+    toc: false
+    number_sections: true
+  html_document:
+    number_sections: true
+    df_print: paged
 ---
 \thispagestyle{empty}
 
@@ -284,7 +284,7 @@ kable(tabela2, col.names = c("Operador Lógico", "Símbolo"), align = "cc",capti
   Converte variável `chr` no formato `date` (ano, dia e mês).\
   Ex. formato: `2015-21-10`.\
 - Sintaxe:\
-`data <- as.date(variável_char)`\
+`data <- as.Date(variável_char)`\
 
 \newpage
 

@@ -266,7 +266,7 @@ Operadores Lógicos
         Converte variável `chr` no formato `date` (ano, dia e mês).  
         Ex. formato: `2015-21-10`.  
 -   Sintaxe:  
-    `data <- as.date(variável_char)`  
+    `data <- as.Date(variável_char)`  
 
 ## 8.2 Descobrir e converter tipos
 
