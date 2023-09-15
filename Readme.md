@@ -235,6 +235,39 @@ Operadores Lógicos
 -   Sintaxe (exemplo):  
     `L <- variavel_1 < variavel_2`  
 
+### 8.1.5 Data - date
+
+-   O pacote `lubridate` perimite o acesso ao tipo `date` (data) e
+    funções para se trabalhar com esse tipo de variável.  
+-   Normalmente passamos uma variável do tipo **character**, no formato
+    de data (ex.: 2006-05-29), para o tipo **date**.  
+-   Podemos passar do tipo **char** para o tipo **date** através das
+    funções:  
+    -   `date(variável_chr)`  
+        Converte variável do tipo `chr` em tipo `date`.  
+        Ex.: `data_date <- date(data_string)`  
+    -   `as_date(variável_chr)`  
+    -   `as.Date(variável_chr)`  
+        Função da base do **R** para converter variável do tipo `chr` em
+        tipo `date`.  
+    -   `dmy(variável_chr)`  
+        Converte variável `chr` no formato `date` (dia, mês e ano).  
+        Ex. formato: `21-10-2015`.  
+    -   `mdy(variável_chr)`  
+        Converte variável `chr` no formato `date` (mês, dia e ano).  
+        Ex. formato: `10-21-2015`.  
+    -   `myd(variável_chr)`  
+        Converte variável `chr` no formato `date` (mês, ano e dia).  
+        Ex. formato: `10-2015-21`.  
+    -   `ymd(variável_chr)`  
+        Converte variável `chr` no formato `date` (ano, mês e dia).  
+        Ex. formato: `2015-10-21`.  
+    -   `ydm(variável_chr)`  
+        Converte variável `chr` no formato `date` (ano, dia e mês).  
+        Ex. formato: `2015-21-10`.  
+-   Sintaxe:  
+    `data <- as.date(variável_char)`  
+
 ## 8.2 Descobrir e converter tipos
 
 ### 8.2.1 as.tipo

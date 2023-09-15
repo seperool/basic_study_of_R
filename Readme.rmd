@@ -3,21 +3,21 @@ title: "Curso de R básico"
 author: "Sergio Pedro R Oliveira"
 date: "`r Sys.Date()`"
 output:
-  md_document:
-    number_sections: true
-    variant: markdown_github
-  pdf_document:
-    number_sections: true
-    toc: false
-  odt_document:
-    number_sections: true
-  github_document: default
   html_document:
     number_sections: true
     df_print: paged
   word_document:
     toc: false
     number_sections: true
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  github_document: default
+  odt_document:
+    number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: false
 ---
 \thispagestyle{empty}
 
@@ -233,7 +233,9 @@ kable(tabela2, col.names = c("Operador Lógico", "Símbolo"), align = "cc",capti
 - Tipo *character* não faz operações matemáticas.\
 - Tipo *character* faz operações lógicas (igual á, diferente de, ...)\
   - Espaços em branco fazem diferença para operações lógicas.\
-  
+
+\newpage
+
 ### Fatores - **factor**
 
 - Factor é o tipo categoria/enumerado.\
@@ -252,6 +254,37 @@ kable(tabela2, col.names = c("Operador Lógico", "Símbolo"), align = "cc",capti
 - Se converter um tipo lógico para numerico *TRUE* assume o valor 1 e *FALSE* o valor 0.\
 - Sintaxe (exemplo):\
 `L <- variavel_1 < variavel_2`\
+
+\newpage
+
+### Data - date
+
+- O pacote `lubridate` perimite o acesso ao tipo `date` (data) e funções para se trabalhar com esse tipo de variável.\
+- Normalmente passamos uma variável do tipo **character**, no formato de data (ex.: 2006-05-29), para o tipo **date**.\
+- Podemos passar do tipo **char** para o tipo **date** através das funções:\
+  - `date(variável_chr)`\
+  Converte variável do tipo `chr` em tipo `date`.\
+  Ex.: `data_date <- date(data_string)`\
+  - `as_date(variável_chr)`\
+  - `as.Date(variável_chr)`\
+  Função da base do **R** para converter variável do tipo `chr` em tipo `date`.\
+  - `dmy(variável_chr)`\
+  Converte variável `chr` no formato `date` (dia, mês e ano).\
+  Ex. formato: `21-10-2015`.\
+  - `mdy(variável_chr)`\
+  Converte variável `chr` no formato `date` (mês, dia e ano).\
+  Ex. formato: `10-21-2015`.\
+  - `myd(variável_chr)`\
+  Converte variável `chr` no formato `date` (mês, ano e dia).\
+  Ex. formato: `10-2015-21`.\
+  - `ymd(variável_chr)`\
+  Converte variável `chr` no formato `date` (ano, mês e dia).\
+  Ex. formato: `2015-10-21`.\
+  - `ydm(variável_chr)`\
+  Converte variável `chr` no formato `date` (ano, dia e mês).\
+  Ex. formato: `2015-21-10`.\
+- Sintaxe:\
+`data <- as.date(variável_char)`\
 
 \newpage
 
